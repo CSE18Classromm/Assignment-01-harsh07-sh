@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-layout</title>
+    <style>
+        .container{
+            background-color: black;
+
+           
+        }
+     .box{
+            background-color: rgb(64, 122, 172);
+            text-align: center;
+            font-size: 1em;
+            width: 100%;
+            height: 100px;
+            margin-bottom:10px;
+
+            
+
+        }
+        .box1{
+            background-color: aqua;
+            
+            text-align: center;
+        
+            font-size: 1em;
+            width: 100%;
+            height: 250px;
+            margin-bottom: 10px;
+            
+            
+        }
+        body{
+            background-color: black;
+        }
+        .container2{
+            display: grid;
+
+            grid-template-columns:repeat(3,1fr) ;
+            height: auto;
+            background-color: black;
+            gap: 10px;
+        
+
+
+        }
+       
+        @media screen and (max-width: 768px) {
+  
+  .container2 {
+grid-template-columns: repeat(1,1fr);
+    
+  }
+}
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Header</div>
+        <div class="box">Nav</div>
+        <div class="box">Section</div>
+        <div class="container2">
+            <div class="box1">Box1</div>
+        <div class="box1">Box2</div>
+        <div class="box1">Box3</div>
+
+        </div>
+        
+        <div class="box">Footer</div>
+    </div>
+</body>
+</html>
